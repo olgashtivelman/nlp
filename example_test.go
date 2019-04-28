@@ -8,9 +8,9 @@ import (
 
 func ExampleTokenize(){
 	text := "what's up doc"
-	tokens := nlp.Tokenize(test)
+	tokens := nlp.Tokenize(text)
 	fmt.Println(tokens)
 	
 	// Output:
-	// what s up doc
+	// [what up doc]
 }

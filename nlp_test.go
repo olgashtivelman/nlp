@@ -3,9 +3,12 @@ package nlp
 import (
 	//"reflect"
 	"testing"
+//	"testing/quick" 
+	
 	"github.com/stretchr/testify/require"
 
 )
+//fuzzy testing?, hypothesis for python!
 
 func TestTokemize(t *testing.T) {
 	
@@ -13,7 +16,7 @@ func TestTokemize(t *testing.T) {
 		text     string
 		expected []string
 	}{
-		{"who's on first", []string{"who", "s", "on", "first"}},
+		{"who's on first", []string{"who", "on", "first"}},
 		{"", []string(nil)},
 	}
 
@@ -36,22 +39,20 @@ func TestTokemize(t *testing.T) {
 //			}
 		})
 	}
-	//
-	//	text := "Who's on first"
-	//	expected := []string{"who", "s", "on", "first"}
-	//
-	//	out := Tokenize(text)
-	//	//if expected != out {
-	//	if !reflect.DeepEqual(expected, out) {
-	//		t.Fatalf("%#v != %#v ", expected, out)
-	//	}
-	//
-	//
-	//	text = ""
-	//	expected = []string(nil) //if this is not nil the test will fail
-	//	out = Tokenize(text)
-	//	if !reflect.DeepEqual(expected, out) {
-	//		t.Fatalf("%#v != %#v ", expected, out)
-	//	}
-
 }
+
+
+
+//
+//func TestQuick(t *testing.T){
+//	require := require.New(t)
+//	fn := func(text string) bool{
+//		tokens := Tokenize(text)
+//		if len(wordRe.FindAllString(text, -1) != len(tokens){
+//				t.Log(text)
+//				return false
+//			}
+//			return true
+//		}
+//	require.NoError(quick.Check(fn, nil))
+//}

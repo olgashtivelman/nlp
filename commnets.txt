@@ -24,3 +24,7 @@ there is  a differene between empty slice and slice לא מאותחל
 
 go mod - what we wnat
 go sum - what we need. testify depends on all the modules 
+
+
+testable examples (ExampleTokenize) -> this shows in go doc and it is also tested. the test needs to start wiht "Example"
+and the //output is what will be checked
