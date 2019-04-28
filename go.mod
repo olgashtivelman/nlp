@@ -1,3 +1,5 @@
-module "https://github.com/olgashtivelman/nlp-git-workshop"
+module github.com/olgashtivelman/nlp
 
 go 1.12
+
+require github.com/stretchr/testify v1.3.0

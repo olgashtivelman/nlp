@@ -1,0 +1,26 @@
+working with go modules
+
+if lib unde go papth needs to set the: 
+export GO111MODULE=on
+
+mustcompile - can raise seomthing instead of returning error code.  so initilization functions should use Must
+
+FIXME - like TODO
+
+commnets always start with  function name. 
+need a new editor! 
+
+godoc?
+
+tests:
+- testify
+- gocheck ? 
+
+new IDE! - vimgo?
+
+cannot do != on slices. only nil or not nil. 
+
+there is  a differene between empty slice and slice לא מאותחל 
+
+go mod - what we wnat
+go sum - what we need. testify depends on all the modules 
